@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'airbnb',
+  extends: require.resolve('eslint-config-airbnb'),
   parser: 'babel-eslint',
   env: {
     browser: true,
