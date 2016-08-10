@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: [
     'jsx-a11y',
+    'flowtype',
   ],
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
@@ -33,5 +34,16 @@ module.exports = {
         'everything-else',
       ],
     }],
+    
+    'flowtype/define-flow-type': 1,
+    'flowtype/require-parameter-type': 1,
+    'flowtype/space-after-type-colon': [1, "always"],
+    'flowtype/space-before-type-colon': [1, "never"],
+    "flowtype/use-flow-type": 1,
   },
+  'settings': {
+    'flowtype': {
+      'onlyFilesWithFlowAnnotation': true
+    }
+  }
 }
