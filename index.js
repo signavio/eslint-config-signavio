@@ -40,7 +40,6 @@ module.exports = {
     }],
     // don't use .jsx extensions
     'react/jsx-filename-extension': [1, { "extensions": [".js"] }],
-    
     'flowtype/define-flow-type': 1,
     'flowtype/require-parameter-type': 1,
     'flowtype/space-after-type-colon': [1, "always"],
