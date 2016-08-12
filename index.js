@@ -21,10 +21,14 @@ module.exports = {
     'space-in-parens': 0,
     // to allow rest destructing with unused vars
     'no-unused-vars': ['warn', { vars: 'local', args: 'after-used' }],
+    // to allow defining internal helper functions after the exported objects
+    'no-use-before-define': 0,
     // better readability for props
     'react/jsx-curly-spacing': 0,
     // no error because of wrapper components
     'react/prop-types': 1,
+    // allow reassigning a variable in the test of a while or do...while loop
+    'no-cond-assign': ['error', 'except-parens'],
     // render above everything-else
     'react/sort-comp': [1, {
       order: [
