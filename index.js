@@ -38,6 +38,8 @@ module.exports = {
         'everything-else',
       ],
     }],
+    // don't use .jsx extensions
+    'react/jsx-filename-extension': [1, { "extensions": [".js"] }],
     
     'flowtype/define-flow-type': 1,
     'flowtype/require-parameter-type': 1,
