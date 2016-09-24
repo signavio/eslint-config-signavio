@@ -40,16 +40,16 @@ module.exports = {
     }],
     'arrow-parens': 'always',
     // don't use .jsx extensions
-    'react/jsx-filename-extension': [1, { "extensions": [".js"] }],
+    'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
     'flowtype/define-flow-type': 1,
     'flowtype/require-parameter-type': 1,
-    'flowtype/space-after-type-colon': [1, "always"],
-    'flowtype/space-before-type-colon': [1, "never"],
-    "flowtype/use-flow-type": 1,
+    'flowtype/space-after-type-colon': [1, 'always'],
+    'flowtype/space-before-type-colon': [1, 'never'],
+    'flowtype/use-flow-type': 1,
   },
-  'settings': {
-    'flowtype': {
-      'onlyFilesWithFlowAnnotation': true
-    }
-  }
+  settings: {
+    flowtype: {
+      onlyFilesWithFlowAnnotation: true,
+    },
+  },
 }
