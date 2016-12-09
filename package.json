@@ -21,7 +21,7 @@
   "author": "Julius Breckel",
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^6.1.2",
+    "babel-eslint": "^7.1.1",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "eslint-plugin-flowtype": "^2.6.4",
