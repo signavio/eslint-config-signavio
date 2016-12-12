@@ -14,18 +14,6 @@ module.exports = {
     'flowtype',
   ],
   rules: {
-    'class-methods-use-this': ['error', {
-      'exceptMethods': [
-        'componentDidMount',
-        'componentDidUpdate',
-        'componentWillMount',
-        'componentWillReceiveProps',
-        'componentWillUnmount',
-        'componentWillUpdate',
-        'render',
-        'shouldComponentUpdate',
-      ],
-    }],
     'comma-dangle': ['error', 'always-multiline'],
     // write semicolons only if necessary, not always
     semi: [2, 'never'],
