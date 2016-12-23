@@ -14,22 +14,31 @@ module.exports = {
     'flowtype',
   ],
   rules: {
+    // always-multiline because it's makes re-ordering lines easier
     'comma-dangle': ['error', 'always-multiline'],
+
     // write semicolons only if necessary, not always
     semi: [2, 'never'],
+
     // better readability for nested function calls
     'space-in-parens': 0,
+
     // to allow rest destructing with unused vars
     'no-unused-vars': ['warn', { vars: 'local', args: 'after-used' }],
+
     // to allow defining internal helper functions after the exported objects
     'no-use-before-define': 0,
+
     // better readability for props
     'react/jsx-curly-spacing': 0,
+
     // no error because of wrapper components
     'react/prop-types': 1,
+
     // allow reassigning a variable in the test of a while or do...while loop
     'no-cond-assign': ['error', 'except-parens'],
-    // render above everything-else
+
+    // render above everything-else, so it can be found more easily
     'react/sort-comp': [1, {
       order: [
         'static-methods',
@@ -38,9 +47,20 @@ module.exports = {
         'everything-else',
       ],
     }],
+
+    // must have parens when using Flow annotations for parameters
     'arrow-parens': ['error', 'always'],
+
     // don't use .jsx extensions
     'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
+
+    // only warn to allow committing unfinished modules that are going to have multiple exports
+    'import/prefer-default-export': 'warn',
+
+    // use import/no-duplicate-imports over eslint core rule, as it distinguishes Flow type imports
+    'no-duplicate-imports': 0,
+    'import/no-duplicates': 1,
+
     'flowtype/define-flow-type': 1,
     'flowtype/require-parameter-type': 1,
     'flowtype/space-after-type-colon': [1, 'always'],
