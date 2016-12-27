@@ -8,10 +8,14 @@ This is due to the fact that large portions of linter rules are highly opinionat
 
 ## Installation
 
-First install this package as a `devDepdency` in your project.
+First install this package as a `devDependency` in your project.
 
 ```shell
 npm install --save-dev eslint-config-signavio
+```
+or
+```shell
+yarn add -D eslint-config-signavio
 ```
 
 After that create a `.eslintrc.json` file and add the following:
