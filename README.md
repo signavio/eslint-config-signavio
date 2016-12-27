@@ -14,7 +14,7 @@ First install this package as a `devDepdency` in your project.
 npm install --save-dev eslint-config-signavio
 ```
 
-After that create a `.eslintrc` file and add the following:
+After that create a `.eslintrc.json` file and add the following:
 
 ```json
 {
@@ -26,4 +26,4 @@ After that create a `.eslintrc` file and add the following:
 
 We encourage everybody to start discussions and file PRs with changes to this rule set.
 However please always make a good point, why you want to introduce a change.
-Simply "not-linking" something doesn't count.
+Simply "not liking" something doesn't count.
