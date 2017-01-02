@@ -23,9 +23,6 @@ module.exports = {
     // better readability for nested function calls
     'space-in-parens': 0,
 
-    // to allow rest destructing with unused vars
-    'no-unused-vars': ['warn', { vars: 'local', args: 'after-used' }],
-
     // to allow defining internal helper functions after the exported objects
     'no-use-before-define': 0,
 
