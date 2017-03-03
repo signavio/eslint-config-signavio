@@ -34,7 +34,20 @@ module.exports = {
 
     // allow reassigning a variable in the test of a while or do...while loop
     'no-cond-assign': ['error', 'except-parens'],
-
+    
+    // enclosing complex expressions by parentheses excluding math operators
+    'no-mixed-operators': [ 'error',
+      {
+        'groups': [
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof']
+        ],
+        'allowSamePrecedence': false
+      }
+    ]
+    
     // render above everything-else, so it can be found more easily
     'react/sort-comp': [1, {
       order: [
