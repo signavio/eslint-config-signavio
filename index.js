@@ -38,13 +38,7 @@ module.exports = {
     // enclosing complex expressions by parentheses excluding math operators
     'no-mixed-operators': [ 'error',
       {
-        'groups': [
-          ['&', '|', '^', '~', '<<', '>>', '>>>'],
-          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-          ['&&', '||'],
-          ['in', 'instanceof']
-        ],
-        'allowSamePrecedence': false
+        'allowSamePrecedence': true
       }
     ],
     
