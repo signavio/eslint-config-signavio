@@ -37,10 +37,10 @@ module.exports = {
     'no-cond-assign': ['error', 'except-parens'],
 
     // enclosing complex expressions by parentheses excluding math operators
-    'no-mixed-operators': [ 'error',
+    'no-mixed-operators': ['error',
       {
-        'allowSamePrecedence': true
-      }
+        allowSamePrecedence: true,
+      },
     ],
 
     // render above everything-else, so it can be found more easily
