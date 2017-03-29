@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     'jsx-a11y',
     'flowtype',
+    'mocha',
   ],
   rules: {
     // always-multiline because it's makes re-ordering lines easier
@@ -34,14 +35,14 @@ module.exports = {
 
     // allow reassigning a variable in the test of a while or do...while loop
     'no-cond-assign': ['error', 'except-parens'],
-    
+
     // enclosing complex expressions by parentheses excluding math operators
-    'no-mixed-operators': [ 'error',
+    'no-mixed-operators': ['error',
       {
-        'allowSamePrecedence': true
-      }
+        allowSamePrecedence: true,
+      },
     ],
-    
+
     // render above everything-else, so it can be found more easily
     'react/sort-comp': [1, {
       order: [
@@ -70,6 +71,9 @@ module.exports = {
     'flowtype/space-after-type-colon': [1, 'always'],
     'flowtype/space-before-type-colon': [1, 'never'],
     'flowtype/use-flow-type': 1,
+
+    // exclusive test exection, like with `describe.only`, should never be committed
+    'mocha/no-exclusive-tests': 'error',
   },
   settings: {
     flowtype: {
