@@ -75,5 +75,7 @@ At the same time update the base for this ruleset [eslint-config-airbnb](https:/
 
 ### Some rules are special (see [eslint-config-prettier#special-rules](https://github.com/prettier/eslint-config-prettier#special-rules))
 
+- `curly` `'error': 'multi-line'` because it will enforce braces if a block has multiple lines
+  This will only trigger after `prettier` but is still considered useful
 - `max-len` `'error'` to give hints about strings that might need manual splitting
-- `no-mixed-operators` `off` because `prettier` formats those in a non-trivial way
+- `no-tabs` We don't want any tabs in our code

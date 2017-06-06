@@ -36,26 +36,7 @@ module.exports = {
                 ignoreTemplateLiterals: true,
             },
         ],
-        'no-confusing-arrow': [
-            'error',
-            {
-                allowParens: true,
-            },
-        ],
-        'no-mixed-operators': [
-            'off',
-            {
-                allowSamePrecedence: true,
-            },
-        ],
         'no-tabs': 'error',
-        quotes: [
-            'off',
-            'single',
-            {
-                avoidEscape: true,
-            },
-        ],
 
         // eslint-plugin-prettier rules
         'prettier/prettier': [
