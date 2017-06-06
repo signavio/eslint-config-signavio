@@ -1,4 +1,4 @@
-# v2.1.0
+# v3.0.0
 
 Introduction of [`prettier`](https://github.com/prettier/prettier) to the config.
 At the same time update the base for this ruleset [eslint-config-airbnb](https://github.com/airbnb/javascript)

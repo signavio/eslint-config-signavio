@@ -33,4 +33,4 @@ Simply "not liking" something doesn't count.
 
 # Changelog
 
-See `CHANGELOG.md`
+See [`CHANGELOG.md`](CHANGELOG.md)
