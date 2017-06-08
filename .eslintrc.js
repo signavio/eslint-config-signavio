@@ -5,7 +5,17 @@ module.exports = {
     },
     plugins: ['prettier', 'flowtype'],
     rules: {
+        // `off` to allow defining internal helper functions after the exported objects
+        'no-use-before-define': 'off',
+        // `off` in order to avoid defining all props on wrapper components
+        'react/prop-types': 'warn',
+        // allow reassigning a variable in the test of a while or do...while loop
+        'no-cond-assign': ['error', 'except-parens'],
+        // `warn` to allow unfinished modules that will have multiple exports
+        'import/prefer-default-export': 'warn',
+        // don't use .jsx extensions
         'react/jsx-filename-extension': ['warn', { extensions: ['.js'] }],
+        // render above everything-else, so it can be found more easily
         'react/sort-comp': [
             'warn',
             {
@@ -17,6 +27,7 @@ module.exports = {
                 ],
             },
         ],
+        // flowtype specific warnings
         'flowtype/define-flow-type': 'warn',
         'flowtype/require-parameter-type': 'warn',
         'flowtype/use-flow-type': 'warn',
