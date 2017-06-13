@@ -3,6 +3,10 @@
 Introduction of [`prettier`](https://github.com/prettier/prettier) to the config.
 At the same time update the base for this ruleset [eslint-config-airbnb](https://github.com/airbnb/javascript)
 
+## Breaking changes:
+
+- `babel-parser` was removed as `eslint` can handle most of ES2017 code. If you do need `babel-eslint` for further transforms keep in mind to add it to your code
+
 ## The changes are smaller than they appear:
 
 ### One environment was removed:
