@@ -7,8 +7,10 @@ module.exports = {
     rules: {
         // `off` to allow defining internal helper functions after the exported objects
         'no-use-before-define': 'off',
-        // `off` in order to avoid defining all props on wrapper components
+        // `warn` in order to avoid defining all props on wrapper components
         'react/prop-types': 'warn',
+        // `off` as flow warns about using possibly undefined values
+        'react/require-default-props': 'off',
         // allow reassigning a variable in the test of a while or do...while loop
         'no-cond-assign': ['error', 'except-parens'],
         // `warn` to allow unfinished modules that will have multiple exports
