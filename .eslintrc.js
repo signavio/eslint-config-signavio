@@ -22,6 +22,7 @@ module.exports = {
             'warn',
             {
                 order: [
+                    'type-annotations',
                     'static-methods',
                     'lifecycle',
                     'render',
