@@ -1,12 +1,14 @@
 {
   "name": "eslint-config-signavio",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "",
   "main": ".eslintrc.js",
-  "files": [".eslintrc.js", "prettier.config.js"],
+  "files": [
+    ".eslintrc.js",
+    "prettier.config.js"
+  ],
   "scripts": {
-    "eslint-check":
-      "eslint --print-config index.js | eslint-config-prettier-check",
+    "eslint-check": "eslint --print-config index.js | eslint-config-prettier-check",
     "lint": "eslint --ignore-pattern '!.eslintrc.js' .eslintrc.js",
     "prettier": "prettier --write **/*.js"
   },
@@ -23,7 +25,9 @@
     "styleguide"
   ],
   "author": "Julius Breckel <julius.breckel@signavio.com>",
-  "contributors": ["David Bialik <david.bialik@signavio.com>"],
+  "contributors": [
+    "David Bialik <david.bialik@signavio.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "eslint-config-airbnb": "^15.0.1",
