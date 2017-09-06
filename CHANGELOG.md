@@ -1,3 +1,16 @@
+# v3.2.0
+
+Upgrade `prettier` to `v1.6.1` to allow the usage of the `prettier.config.js` file.
+To use this configuration in your project add the following script to your `package.json`:
+
+```json
+{
+    "scripts": {
+        "prettier": "prettier --write --config ./node_modules/eslint-config-signavio/prettier.config.js **/*.js"
+    }
+}
+```
+
 # v3.0.0
 
 Introduction of [`prettier`](https://github.com/prettier/prettier) to the config.
