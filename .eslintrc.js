@@ -1,3 +1,5 @@
+const { prettierConfig } = require('./prettier.config')
+
 module.exports = {
     extends: ['airbnb', 'prettier', 'prettier/flowtype', 'prettier/react'],
     env: {
@@ -5,13 +7,15 @@ module.exports = {
     },
     plugins: ['prettier', 'flowtype'],
     rules: {
-        // `off` to allow defining internal helper functions after the exported objects
+        // `off` to allow defining internal helper
+        // functions after the exported objects
         'no-use-before-define': 'off',
         // `warn` in order to avoid defining all props on wrapper components
         'react/prop-types': 'warn',
         // `off` as flow warns about using possibly undefined values
         'react/require-default-props': 'off',
-        // allow reassigning a variable in the test of a while or do...while loop
+        // allow reassigning a variable in the test of a
+        // while or do...while loop
         'no-cond-assign': ['error', 'except-parens'],
         // `warn` to allow unfinished modules that will have multiple exports
         'import/prefer-default-export': 'warn',
@@ -53,15 +57,7 @@ module.exports = {
         'no-tabs': 'error',
 
         // eslint-plugin-prettier rules
-        'prettier/prettier': [
-            'error',
-            {
-                tabWidth: 4,
-                semi: false,
-                singleQuote: true,
-                trailingComma: 'es5',
-            },
-        ],
+        'prettier/prettier': ['error', prettierConfig],
     },
     settings: {
         flowtype: {
