@@ -5,8 +5,7 @@ const prettierConfig = {
     trailingComma: 'es5',
 }
 
-module.exports = {
-    ...prettierConfig,
+module.exports = Object.assign({}, prettierConfig, {
     overrides: [
         {
             files: 'package.json',
@@ -14,4 +13,4 @@ module.exports = {
         },
     ],
     prettierConfig,
-}
+})
