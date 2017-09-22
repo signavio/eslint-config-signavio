@@ -1,4 +1,4 @@
-const { prettierConfig } = require('./prettier.config')
+const prettierConfig = require('./prettier.config')
 
 module.exports = {
     extends: ['airbnb', 'prettier', 'prettier/flowtype', 'prettier/react'],
