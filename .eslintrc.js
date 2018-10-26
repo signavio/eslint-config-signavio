@@ -34,6 +34,8 @@ module.exports = {
                 ],
             },
         ],
+        // literal strings in JSX should always be wrapped in an i18n call
+        'react/jsx-no-literals': 'error',
         // flowtype specific warnings
         'flowtype/define-flow-type': 'warn',
         'flowtype/require-parameter-type': 'warn',
